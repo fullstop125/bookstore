@@ -6,11 +6,10 @@ import '../assets/styles/booklist.css';
 const BookLists = () => (
   <>
     <ul>
-      <Book>Title</Book>
-      <Book>Author</Book>
-      <Book>
-        <button type="button">Remove</button>
-      </Book>
+      <Book title="The Hunger Games" author="Suzanne Collins" button="Remove" />
+      <Book title="Dune" author="Frank Herbert" button="Remove" />
+      <Book title="Capital in the Twenty-First Century" author="Suzanne Collins" button="Remove" />
+
     </ul>
     <Form />
   </>
