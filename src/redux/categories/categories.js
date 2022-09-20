@@ -7,18 +7,18 @@ export const SHOW_STATUS = 'categories/categories/SHOW_STATUS';
 export const showStatus = () => (dispatch) => {
   dispatch({
     type: SHOW_STATUS,
-    payload: ['under construction'],
+    payload: 'under construction',
   });
 };
 
 // reducer
 
-const initialState = [];
+const initialState = '';
 
 const categoriesReducer = (state = initialState, action) => {
   switch (action.type) {
     case SHOW_STATUS:
-      return [...state, action.payload];
+      return action.payload;
     default:
       return state;
   }
