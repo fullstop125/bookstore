@@ -1,11 +1,27 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { v4 as uuid } from 'uuid';
+import { showStatus } from '../redux/categories/categories';
 
-const CategoryPage = () => (
-  <div>
-    <button type="button">
-      Check Status
-    </button>
-  </div>
-);
+const CategoryPage = () => {
+  const { categories } = useSelector((state) => state.categories);
+  const dispatch = useDispatch();
+  const clickHandler = (e) => {
+    e.preventDefault();
+    dispatch(showStatus());
+  };
+  return (
+    <div>
+      <button type="button" onClick={clickHandler}>
+        Check Status
+      </button>
+      {categories.map((category) => (
+        <div key={uuid()}>
+          <p>{category}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default CategoryPage;

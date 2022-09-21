@@ -13,12 +13,14 @@ export const showStatus = () => (dispatch) => {
 
 // reducer
 
-const initialState = '';
+const initialState = {
+  categories: [],
+};
 
 const categoriesReducer = (state = initialState, action) => {
   switch (action.type) {
     case SHOW_STATUS:
-      return action.payload;
+      return { categories: [...state.categories, action.payload] };
     default:
       return state;
   }

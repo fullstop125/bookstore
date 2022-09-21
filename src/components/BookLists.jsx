@@ -1,18 +1,28 @@
+import { useSelector } from 'react-redux';
 import React from 'react';
 import Book from './Book';
 import Form from './Form';
 import '../assets/styles/booklist.css';
 
-const BookLists = () => (
-  <>
-    <ul>
-      <Book title="The Hunger Games" author="Suzanne Collins" button="Remove" />
-      <Book title="Dune" author="Frank Herbert" button="Remove" />
-      <Book title="Capital in the Twenty-First Century" author="Suzanne Collins" button="Remove" />
+const BookLists = () => {
+  const { books } = useSelector((state) => state.books);
 
-    </ul>
-    <Form />
-  </>
-);
+  return (
+    <>
+      <ul>
+        {books.map((book) => (
+          <Book
+            title={book.title}
+            author={book.author}
+            button="Remove"
+            id={book.id}
+            key={book.id}
+          />
+        ))}
+      </ul>
+      <Form />
+    </>
+  );
+};
 
 export default BookLists;
