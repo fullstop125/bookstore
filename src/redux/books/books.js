@@ -10,22 +10,28 @@ export const createBook = (book) => (dispatch) => {
   });
 };
 
-export const removeBook = (book) => (dispatch) => {
+export const removeBook = (id) => (dispatch) => {
   dispatch({
     type: REMOVE_BOOK,
-    payload: book,
+    payload: id,
   });
 };
 
 // reducer
-const initialState = [];
+const initialState = {
+  books: [],
+};
 
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
     case CREATE_BOOK:
-      return [...state, action.payload];
+      return { books: [...state.books, action.payload] };
+
     case REMOVE_BOOK:
-      return state.filter((book) => book.id !== action.payload.id);
+      return {
+        books: state.books.filter((book) => book.id !== action.payload),
+      };
+
     default:
       return state;
   }
