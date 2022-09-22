@@ -6,9 +6,9 @@ import { createBook } from '../redux/books/books';
 
 const Form = () => {
   const [values, setValues] = useState({
-    id: uuid(),
     title: '',
     author: '',
+    category: '',
   });
 
   const handleChange = (e) => {
@@ -22,12 +22,19 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const newBook = {
+      item_id: uuid(),
+      title: values.title,
+      author: values.author,
+      category: values.category,
+    };
+    dispatch(createBook(newBook));
+
     setValues({
-      id: uuid(),
       title: '',
       author: '',
+      category: '',
     });
-    dispatch(createBook(values));
   };
 
   return (
@@ -46,6 +53,17 @@ const Form = () => {
         value={values.author}
         onChange={handleChange}
       />
+      <select name="category" value={values.category} onChange={handleChange}>
+        <option value="">Select Category</option>
+        <option value="Action">Action</option>
+        <option value="Biography">Biography</option>
+        <option value="History">History</option>
+        <option value="Horror">Horror</option>
+        <option value="Kids">Kids</option>
+        <option value="Learning">Learning</option>
+        <option value="Sci-Fi">Sci-Fi</option>
+      </select>
+
       <button type="submit" onClick={handleSubmit}>
         Submit
       </button>
