@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/books';
 
 const Book = ({
-  title, author, button, id,
+  title, author, button, id, category,
 }) => {
   const dispatch = useDispatch();
 
@@ -11,6 +11,7 @@ const Book = ({
     <>
       <li>{title}</li>
       <li>{author}</li>
+      <li>{category}</li>
       <li>
         <button
           type="button"
