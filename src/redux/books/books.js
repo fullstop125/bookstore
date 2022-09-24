@@ -33,11 +33,12 @@ export const createBook = (book) => (dispatch) => {
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
     },
-  }).then(() => dispatch({
-    type: CREATE_BOOK,
-  }));
-
-  dispatch(showBooks());
+  }).then(() => {
+    dispatch({
+      type: CREATE_BOOK,
+    });
+    dispatch(showBooks());
+  });
 };
 
 export const removeBook = (id) => (dispatch) => {

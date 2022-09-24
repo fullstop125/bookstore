@@ -38,36 +38,53 @@ const Form = () => {
   };
 
   return (
-    <form>
-      <input
-        type="text"
-        placeholder="Title"
-        name="title"
-        value={values.title}
-        onChange={handleChange}
-      />
-      <input
-        type="text"
-        placeholder="Author"
-        name="author"
-        value={values.author}
-        onChange={handleChange}
-      />
-      <select name="category" value={values.category} onChange={handleChange}>
-        <option value="">Select Category</option>
-        <option value="Action">Action</option>
-        <option value="Biography">Biography</option>
-        <option value="History">History</option>
-        <option value="Horror">Horror</option>
-        <option value="Kids">Kids</option>
-        <option value="Learning">Learning</option>
-        <option value="Sci-Fi">Sci-Fi</option>
-      </select>
-
-      <button type="submit" onClick={handleSubmit}>
-        Submit
-      </button>
-    </form>
+    <div>
+      <hr className="line" />
+      <h1 className="new-book">ADD NEW BOOK</h1>
+      <form id="form" type="submit">
+        <input
+          required
+          type="title"
+          value={values.title}
+          name="title"
+          placeholder="title"
+          id="input-1"
+          onChange={handleChange}
+        />
+        {' '}
+        <input
+          required
+          type="author"
+          value={values.author}
+          name="author"
+          placeholder="author"
+          id="input-2"
+          onChange={handleChange}
+        />
+        {' '}
+        <select
+          type="category"
+          name="category"
+          placeholder="category"
+          value={values.category}
+          onChange={handleChange}
+          id="otherField"
+        >
+          <option>Select Category</option>
+          <option value="Action">Action</option>
+          <option value="Biography">Biography</option>
+          <option value="History">History</option>
+          <option value="Horror">Horror</option>
+          <option value="Kids">Kids</option>
+          <option value="Learning">Learning</option>
+          <option value="Sci-Fi">Sci-Fi</option>
+        </select>
+        {' '}
+        <button className="btn" type="submit" onClick={handleSubmit}>
+          ADD BOOK
+        </button>
+      </form>
+    </div>
   );
 };
 
