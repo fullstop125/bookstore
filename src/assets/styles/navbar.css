@@ -52,11 +52,11 @@ a {
 
 .image {
   position: absolute;
-    display: flex;
-    margin-right: -70rem;
-    height: 4.5rem;
-    border-radius: 30px;
-    padding: 15px;
-    border: 0.5px solid #f0e9e9;
-    cursor: pointer;
+  display: flex;
+  margin-right: -70rem;
+  height: 4.5rem;
+  border-radius: 30px;
+  padding: 15px;
+  border: 0.5px solid #f0e9e9;
+  cursor: pointer;
 }
