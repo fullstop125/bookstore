@@ -2,6 +2,7 @@ import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuid } from 'uuid';
 import { showStatus } from '../redux/categories/categories';
+import '../assets/styles/categoriespage.css';
 
 const CategoryPage = () => {
   const { categories } = useSelector((state) => state.categories);
@@ -11,7 +12,7 @@ const CategoryPage = () => {
     dispatch(showStatus());
   };
   return (
-    <div>
+    <div className="categories">
       <button type="button" onClick={clickHandler}>
         Check Status
       </button>
