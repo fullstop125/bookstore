@@ -1,6 +1,6 @@
 // action types
-export const CREATE_BOOK = 'books/books/CREATE_BOOK';
-export const REMOVE_BOOK = 'books/books/REMOVE_BOOK';
+export const CREATE_BOOK = "books/books/CREATE_BOOK";
+export const REMOVE_BOOK = "books/books/REMOVE_BOOK";
 
 // action creators
 export const createBook = (book) => (dispatch) => {
