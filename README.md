@@ -1,6 +1,6 @@
 # Project Name
 
-Book Store
+BookStore CMS
 
 # Description the project
 
@@ -11,24 +11,34 @@ This is a book store project that allows users to add books to the store, remove
 - react
 - vite
 - skeleton css
+- redux
 
 ### Setup
 
-- Clone the repository
-
-> Open GitHub and go to my GitHub repository name to clone.
-> Click “Code” and copy the given URL.
-> click code and copy the URL.
-
-> click code and copy the URL.
-
-> Open “Git Bash” and change the current working directory to the location where you want the cloned directory.
-
-> Type git clone in the terminal, paste the URL you copied earlier, and press “enter” to create your local clone.
-
-> Syntax:
-
-$ git clone {repository URL}
+> Clone the repository
+  
+    git clone
+    
+> cd into the directory
+    
+    
+    cd bookstore-cms
+  
+> Install dependencies
+    
+   
+    npm install
+  
+> Run the app
+    
+    
+    npm run dev
+   
+> Run the tests
+    
+  
+    npm run test
+  
 
 ### Usage
 
@@ -44,7 +54,7 @@ $ npm start to run the local server
 
 ## Click here for live version
 
-- live demo: [coming soon]()
+- live demo: [BookStore CMS](https://bookstorecmsreact.netlify.app/)
 
 ## Authors
 
@@ -52,7 +62,7 @@ $ npm start to run the local server
 
 - GitHub: [@fullstop125](https://github.com/fullstop125)
 - Twitter: [@twitterhandle](https://twitter.com/moseshassany)
-- LinkedIn: [momanyi-hassan](https://linkedin.com/in/momanyi-hassan-32a489180/)
+- LinkedIn: [momanyi-hassan](https://linkedin.com/in/momanyi-hassan/)
 
 ## 🤝 Contributing
 
