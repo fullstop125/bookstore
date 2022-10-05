@@ -13,6 +13,9 @@ This is a book store project that allows users to add books to the store, remove
 - skeleton css
 - redux
 
+### Live LInk
+[Bookstore CMS](https://bookstorecmsreact.netlify.app/)
+
 ### Setup
 
 > Clone the repository
