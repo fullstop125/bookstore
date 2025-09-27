@@ -1,0 +1,17 @@
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  perspective: 1000px;
+}
+
+.book-list .card {
+  animation: fadeIn 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+@for $i from 1 through 10 {
+  .book-list .card:nth-child(#{$i}) {
+    animation-delay: #{$i * 0.1}s;
+  }
+}

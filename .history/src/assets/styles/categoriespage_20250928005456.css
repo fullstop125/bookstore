@@ -1,0 +1,20 @@
+.categories-container {
+  padding: 3rem 5%;
+  text-align: center;
+}
+
+.categories-btn {
+  background-color: #3a8bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.categories-btn:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,15 @@
+.categories-container {
+  padding: 2rem 5%;
+}
+
+.categories-btn {
+  font-family: 'RobotoSlab', serif;
+  font-size: 0.813rem;
+  font-weight: 300;
+  padding: 0.438rem 1.188rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}

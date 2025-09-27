@@ -1,0 +1,48 @@
+.form-container {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e8e8e8;
+}
+
+.new-book {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+#form {
+  display: flex;
+  gap: 2.125rem;
+  align-items: center;
+}
+
+.input {
+  height: 2.813rem;
+  padding: 0 1.063rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  font-size: 1rem;
+}
+
+#input-1 {
+  width: 25%;
+}
+
+#input-2 {
+  width: 20%;
+}
+
+.btn {
+  padding: 0.801rem 1.188rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: 'RobotoSlab', serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
