@@ -1,0 +1,45 @@
+.form-container {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.new-book {
+  font-size: 1.2rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+#form {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.input {
+  height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  font-size: 0.9rem;
+}
+
+#input-1 {
+  flex: 2;
+}
+
+#input-2 {
+  flex: 1;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 3px;
+  background-color: #d96650;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: bold;
+}

@@ -1,0 +1,13 @@
+.categories-container {
+  padding: 2rem 5%;
+}
+
+.categories-btn {
+  background-color: #d96650;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
